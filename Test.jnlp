@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- file Hello.jnlp -->
+<!-- 如果直接在浏览器中输入Codebase的地址，就会自动访问homepage，如果直接输入的是http://localhost:8888/jnlp/Test.jnlp，就会直接下载Test.jnlp文件 -->
 <jnlp spec="1.0+"
-codebase="http://192.9.200.156:8080/jnlp"
-href="http://192.9.200.156:8080/jnlp/Hello.jnlp">
+codebase="http://localhost:8888/jnlp"
+href="http://localhost:8888/jnlp/Test.jnlp">
   <information>
     <title>Hello</title>
     <vendor>Tech Tips Sample</vendor>
-    <homepage href=""/>
-    <icon href="HelloJNLP.jpg"/>
+    <homepage href="index.html"/>
+    <icon href="Test.jpeg"/>
   </information>
- <!--
+ <!-- 离线允许访问 -->
   <offline-allowed/> 
+  <!-- 配置安全项 -->
   <security>
-   <j2ee-application-client-permissions/>
+	<j2ee-application-client-permissions/>
   </security>
-  -->
+
   <resources>
-    <j2se version="1.5+"/>
-    <jar href="HelloJNLP.jar"/>
+    <j2se version="1.8.0_101"/>
+    <jar href="Test.jar"/>
   </resources>
-  <application-desc main-class="HelloJNLP"/>
+  <application-desc main-class="Test"/>
 </jnlp>
