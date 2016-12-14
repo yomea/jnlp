@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- file Hello.jnlp -->
+<jnlp spec="1.0+"
+codebase="http://192.9.200.156:8080/jnlp"
+href="http://192.9.200.156:8080/jnlp/Hello.jnlp">
+  <information>
+    <title>Hello</title>
+    <vendor>Tech Tips Sample</vendor>
+    <homepage href=""/>
+    <icon href="HelloJNLP.jpg"/>
+  </information>
+ <!--
+  <offline-allowed/> 
+  <security>
+   <j2ee-application-client-permissions/>
+  </security>
+  -->
+  <resources>
+    <j2se version="1.5+"/>
+    <jar href="HelloJNLP.jar"/>
+  </resources>
+  <application-desc main-class="HelloJNLP"/>
+</jnlp>
